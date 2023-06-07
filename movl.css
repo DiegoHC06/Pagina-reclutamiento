@@ -1,0 +1,56 @@
+@import url(desktop.css);
+@media screen and (max-width: 480px)
+{
+header{
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    max-width: 150px;
+    margin: auto;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px 30px;
+    transition: all 0.5s;
+  }
+  nav ul li a:hover {
+    background-color: rgb(123, 123, 185);
+    color: black;
+  }
+#menu {
+    display: flex;
+  }
+  nav {
+    
+    padding: 1px 0px;
+    position: relative;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    background-color: #ffffff;
+    z-index: 2;
+    top:100%;
+    left: -100%;
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  nav ul.abrirmenu {
+    left: 0px;
+  }
+  nav ul li {
+    border-bottom: 1px #0d5adc inset;
+    width: 100%;
+  }
+  nav ul li a {
+    display: block;
+  }
+}

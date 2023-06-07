@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECRUITMENT</title>
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="contacto.css">
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+</head>
+<body>
+     <!--Flecha que tira pa arriba-->
+    <i id="irarriba" class=" fa-solid fa-circle-up"></i>
+    <header class="ancho">
+        <figure class >
+            <img src="imagenes/brand.png" alt= "" />
+        </figure>
+        <nav>
+            <i id="menu" class="fas fa-bars fa-2x index"></i>
+            <ul class="contenedormenu ">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sector.html">sector/division</a></li>
+                <li><a href="a">ayuda/servicios </a></li>
+                <li><a href="a">Acerca de</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class=" ancho">
+        <div class="empleados">
+            <div class="perfiles">
+                <article>
+                    <figure>
+                        <img src="imagenes/home-08.jpg" alt="" height="100%" />
+                    </figure>
+                    <h2>Jessica Cooper</h2>
+                    <h3>Esthetician</h3>
+                    <ul class="redes">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                    
+                    <a class="btn" href="#" id="btn">Submit comment</a>
+                    
+                </article>
+                <article>
+                    <figure>
+                        <img src="imagenes/home-09.jpg" alt="" height="100%" />
+                    </figure>
+                    <h2>Robert Wagner</h2>
+                    <h3>Hairdresser</h3>
+                    <ul class="redes">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                    <a class="btn" href="#" id="butn">Submit comment</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="modal" class="modal">
+    <div class="caja-modal">
+        <div class="caja-contenido">
+            <i id="btncerrar" class="btncerrar fas fa-window-close"></i>
+            <div class="caja-form">
+                <h1>Contact Us</h1>
+                <h2>
+                    9870 St Vincent Place, Glasgow, DC 45 Fr 45.
+                </h2>
+                <form action="">
+                    <input class="intp" type="text" placeholder="Name..." />
+                    <input type="text" placeholder="Email..." />
+                    <textarea rows="10" placeholder="Message..."></textarea>
+                    <input class="submit" type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <br>
+    <footer class="pie ancho">
+        <figure class="fotopie " >
+            <img src="imagenes/brand-footer.png" alt= "" />
+        </figure>
+        <br>
+        <div class="list-inline">
+            <div class="copyright">
+                <h2>Recruitment Agencies Directory ©2022 All rights reserved.</h2>
+                 <h3>Terms of use | Privacy Polic</h3>
+            </div>
+            <ul class="redes">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+        </div>
+    </footer>
+    <script >
+        	var mostrarmodal = document.getElementById("modal");
+			var cerrarmodal = document.getElementById("btncerrar");
+			var btnejecutar = document.getElementById("btn");
+			var btnejecutar2 = document.getElementById("butn");
+	
+			btnejecutar.onclick = function () {
+				mostrarmodal.style.display = "block";
+			};
+			
+			cerrarmodal.onclick = function () {
+				mostrarmodal.style.display = "none";
+			};
+			
+			btnejecutar2.onclick = function () {
+				mostrarmodal.style.display = "block";
+			};
+
+	
+			window.onclick = function (event) {
+				if (event.target == mostrarmodal) {
+					mostrarmodal.style.display = "none";
+				}
+			};
+    </script>
+</body>
+</html>

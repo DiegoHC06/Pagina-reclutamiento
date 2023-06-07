@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECRUITMENT</title>
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+    $(".ir_arriba").click(function () {
+        $("html,body").animate(
+        {
+            scrollTop: "0px",
+        },
+        1000
+        );
+    });
+    });
+  </script>
+  
+    <!--Flecha que tira pa arriba-->
+    <i id="subir" class="ir_arriba fas fa-arrow-circle-up"></i>
+    <header class="ancho">
+        <figure class >
+            <img src="imagenes/brand.png" alt= "" />
+        </figure>
+        <nav>
+        <i id="menu" class="fas fa-bars fa-2x index"></i>
+            <ul class="contenedormenu ">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sector.html">sector/division</a></li>
+                <li><a href="#">ayuda/servicios </a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class=" contenedor1 ancho"> 
+        <div class="banner ancho">
+            <h1 class=" wow animate__animated animate__bounce animate__delay-2s">Everybody has a chance to apply his knowledge</h1>
+            <h3>Thank you for visiting our site!</h3>
+            <a class="btn-uno" href="#">Lear more</a>
+        </div> 
+    </section>
+    <section class="contenedor2 ancho">
+        <h2 class="welcome wow animate__heartBeat">Welcome to our site!</h2>
+        <div class="contenedorinfo">
+            <article class="info1">
+                <figure  >
+                    <img src="imagenes/home-02.jpg" alt= "" />
+                </figure>
+                <h3>Ensuring the highest level of customers satisfaction</h3>
+                <p>Our company is your one-stop-solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is perfect.</p>
+            </article>
+            <article class="info1">
+                <figure  >
+                    <img src="imagenes/home-03.jpg" alt= "" />
+                </figure>
+                <h3>Ensuring the highest level of customers satisfaction</h3>
+                <p >Thank you for visiting our site! You are at the right place! We are focused on providing integrated solutions and services to customers around the world.</p>
+            </article>
+        </div>
+    </section>
+    <section class="ancho barraamarillo">
+        <h2>How can our agency help you?</h2>
+    </section>
+
+    <section class="slidefotos">
+        <ul class="rslides ">
+          <li><img src="imagenes/picture1.jpg" alt=""></li>
+          <li><img src="imagenes/cecati2.jpg" alt=""></li>
+          <li><img src="imagenes/cecati3.jpg" alt=""></li>
+        </ul>
+        <div class="informacion">
+          <h2 class="wow animate__animated animate__wobble">titulo</h2>
+          <br>
+          <p class="animacionparrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ducimus? Cum quos
+            distinctio commodi voluptate
+            iste et minima? Dignissimos dicta cum accusamus illo hic aliquam cumque possimus tenetur temporibus delectus!
+          </p>
+          <br>
+          <a href="#" class="btn wow animate__animated animate__bounce animate__delay-2s">ver mas</a>
+        </div>
+      </section>
+    
+    <footer class="pie ancho">
+        <figure class="fotopie " >
+            <img src="imagenes/brand-footer.png" alt= "" />
+        </figure>
+        <br>
+        <div class="list-inline">
+            <div class="copyright">
+                <h2>Recruitment Agencies Directory ©2022 All rights reserved.</h2>
+                 <h3>Terms of use | Privacy Polic</h3>
+            </div>
+            <ul class="redes">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+          $(".rslides").responsiveSlides();
+        });
+    
+        // script para animaciones
+        new WOW().init();
+    
+      </script>
+    
+ 
+</body>
+</html>
