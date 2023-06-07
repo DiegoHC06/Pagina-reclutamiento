@@ -159,13 +159,20 @@ cursor: pointer;
     padding: 10px; 
     width: 300px; 
     height: 400px; 
-    box-shadow: 0px 0px 10px 5px gray;
-    /* border: 1px solid #dcdcdc;  */
-    /* border:2px green solid; */
+    box-shadow: 0px 0px 10px 5px gray; 
+    
+
     }
 #slider1 .overview li img{
     object-fit: cover;
     width: 250px;
+}
+.foto{
+  filter: sepia(0%);
+  transition: all .5s;
+}
+.foto:hover{
+      filter: sepia(100%);
 }
 .btn_vermas{
     padding:10px 30px;
